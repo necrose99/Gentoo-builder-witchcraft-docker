@@ -1,7 +1,12 @@
 FROM gentoo/stage3-amd64:latest
 
 # installing witchcraft deps
-RUN emerge sudo dev-perl/Class-Load dev-perl/Class-Load-XS dev-perl/List-MoreUtils dev-perl/DateTime-Local dev-perl/libwww-perl App-cpanminus
+RUN emerge sudo dev-perl/Class-Load 
+RUN emerge dev-perl/Class-Load-XS 
+RUN emerge dev-perl/List-MoreUtils 
+RUN emerge dev-perl/DateTime-Local 
+RUN emerge dev-perl/libwww-perl 
+RUN emerge App-cpanminus
 
 # downloading and install witchcraft
 RUN wget 'https://codeload.github.com/Spike-Pentesting/App-witchcraft/tar.gz/master' -O witchcraft.tar.gz && tar xvf witchcraft.tar.gz && cd App-witchcraft-master && cpanm --installdeps -n . && cpanm .

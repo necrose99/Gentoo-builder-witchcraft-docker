@@ -1,6 +1,5 @@
-FROM necrose99/gentoo-docker-x86
+FROM gentoo/stage3-amd64-hardened
 
-VOLUME /
 # installing witchcraft deps
 RUN emerge --sync
 RUN emerge --update --changed-use --deep @world

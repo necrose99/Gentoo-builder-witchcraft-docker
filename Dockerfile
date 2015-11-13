@@ -14,3 +14,6 @@ RUN wget 'https://codeload.github.com/Spike-Pentesting/App-witchcraft/tar.gz/mas
 RUN perl-cleaner --all
 # configuring witchcraft
 RUN mkdir -p /root/.witchcraft && cp -rfv /App-witchcraft-master/witchcraft.conf /root/.witchcraft/witchcraft.conf && sed -i s:pushbullet:Git:g /root/.witchcraft/witchcraft.conf && sed -i s:Sabayon:Qacheck:g /root/.witchcraft/witchcraft.conf && rm -rfv /App-witchcraft-master && rm -rfv /witchcraft.tar.gz
+# Display some news items
+# Finalization
+RUN env-update

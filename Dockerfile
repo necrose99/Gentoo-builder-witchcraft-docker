@@ -1,6 +1,7 @@
 FROM gentoo/stage3-amd64-hardened
-emerge git layman 
-perl-experimental-snapshots
+MAINTAINER necrose99 necrose99@protmail.ch mike@michaellawrenceit.com
+RUN emerge git layman 
+RUN layman -L && layman -a perl-experimental-snapshots
 # installing witchcraft deps
 RUN emerge-webrsync -q
 RUN emerge app-portage/g-cpan  dev-perl/Class-Load dev-perl/TermReadKey

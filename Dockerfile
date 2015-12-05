@@ -9,7 +9,7 @@ RUN emerge dev-perl/Class-Load-XS dev-perl/Child dev-perl/Carp-Always
 RUN emerge dev-perl/List-MoreUtils dev-perl/Config-Simple virtual/perl-Digest-MD5
 RUN emerge dev-perl/DateTime virtual/perl-Encode virtual/perl-File-Path
 RUN emerge dev-perl/DateTime-Locale dev-perl/App-CLI dev-perl/Git-PurePerl  dev-perl/IPC-Run3
-RUN emerge dev-perl/libwww-perl 	dev-perl/Git-Sub dev-perl/HTTP-Message dev-perl/libwww-perl dev-perl/regexp-common virtual/perl-Term-ANSIColor dev-perl/TermReadKey
+RUN emerge dev-perl/libwww-perl dev-perl/Git-Sub dev-perl/HTTP-Message dev-perl/libwww-perl dev-perl/regexp-common virtual/perl-Term-ANSIColor dev-perl/TermReadKey
 RUN emerge App-cpanminus dev-perl/App-Nopaste dev-perl/Import-Into
 RUN g-cpan --cpan_reload --generate --install -v 
 
